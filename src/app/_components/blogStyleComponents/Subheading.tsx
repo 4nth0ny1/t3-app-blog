@@ -3,5 +3,5 @@ interface SubHeadingProps {
 }
 
 export default function Subheading({ subheading }: SubHeadingProps) {
-  return <h2 className="pb-2 pt-8 text-3xl">{subheading}</h2>;
+  return <h2 className={`pb-2 pt-8 text-3xl ${subheading}`}>{subheading}</h2>;
 }
