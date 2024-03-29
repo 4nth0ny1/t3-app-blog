@@ -4,6 +4,7 @@ import { Inter, Poppins } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "../app/_components/Navbar";
+import Footer from "../app/_components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <TRPCReactProvider>
           <Navbar />
           {children}
+          <Footer />
         </TRPCReactProvider>
       </body>
     </html>
