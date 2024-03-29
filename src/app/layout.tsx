@@ -1,12 +1,18 @@
 import "~/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "../app/_components/Navbar";
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "400",
   variable: "--font-sans",
 });
 
@@ -23,9 +29,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body data-theme="lemonade" className={`font-sans ${inter.variable}`}>
+      <body data-theme="lemonade" className={`font-sans ${poppins.variable}`}>
         <TRPCReactProvider>
-          {" "}
           <Navbar />
           {children}
         </TRPCReactProvider>
