@@ -16,13 +16,13 @@ export default function FirstBlog() {
   return (
     <>
       <Title title="By order of the Peaky Blinders" />
-
-      <div className="flex flex-row">
-        <div className="w-1/5 py-2">
+      <hr></hr>
+      <div className="flex flex-col py-8 lg:flex-row">
+        <div className="flex w-full flex-col justify-center py-2 lg:w-1/5 lg:justify-start">
           <h2 className="pb-2 text-xl">Table of Contents</h2>
           <TableOfContents />
         </div>
-        <div className="flex min-h-screen w-4/5 flex-col items-center">
+        <div className="flex min-h-screen w-full flex-col items-center lg:w-4/5">
           <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
           <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
           <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
