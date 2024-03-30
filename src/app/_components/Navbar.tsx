@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   return (
@@ -10,24 +11,33 @@ export default function Navbar() {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/blogs">Blogs</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
+            <div className="hidden md:block">
+              <div className="flex flex-row">
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <Link href="/blogs">Blogs</Link>
+                </li>
+                <li>
+                  <Link href="/about">About</Link>
+                </li>
+              </div>
+            </div>
+            <li className="md:hidden">
               <details>
-                <summary>Parent</summary>
+                <summary>
+                  <RxHamburgerMenu />
+                </summary>
                 <ul className="rounded-t-none bg-base-100 p-2">
                   <li>
-                    <a>Link 1</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a>Link 2</a>
+                    <Link href="/blogs">Blogs</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">About</Link>
                   </li>
                 </ul>
               </details>
