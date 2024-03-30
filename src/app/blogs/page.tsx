@@ -90,6 +90,7 @@ export default function BlogsPage() {
         {blogArray.map((blog) => {
           return (
             <Card
+              key={blog.title}
               id={blog.id}
               imgUrl={blog.imgUrl}
               imgAlt={blog.imgAlt}
