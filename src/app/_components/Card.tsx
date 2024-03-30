@@ -24,9 +24,15 @@ export default function Card({
 }: CardProps) {
   return (
     <Link href={linkUrl}>
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-full bg-base-100 shadow-xl">
         <figure>
-          <Image src={imgUrl} alt={imgAlt} width={300} height={300} />
+          <Image
+            src={imgUrl}
+            alt={imgAlt}
+            width={300}
+            height={300}
+            className="h-[200px]"
+          />
         </figure>
         <div className="card-body">
           <h2 className="card-title">
