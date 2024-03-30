@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Hero from "./_components/Hero";
 
 // import { CreatePost } from "~/app/_components/create-post";
 // import { getServerAuthSession } from "~/server/auth";
@@ -10,7 +11,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <h1>Home Page</h1>
+      <Hero />
     </main>
   );
 }
