@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <div className="bg-base-100">
-      <div className="navbar mx-auto max-w-[1200px] ">
+      <div className="navbar mx-auto max-w-[1200px]">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">daisyUI</a>
         </div>

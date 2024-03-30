@@ -33,7 +33,7 @@ export default function RootLayout({
       <body data-theme="lemonade" className={`font-sans ${poppins.variable}`}>
         <TRPCReactProvider>
           <Navbar />
-          {children}
+          <div className=" mx-auto max-w-[1200px]">{children}</div>
           <Footer />
         </TRPCReactProvider>
       </body>

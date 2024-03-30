@@ -50,15 +50,15 @@ function TableOfContents() {
     <div>
       <button onClick={() => scrollYo(subs[0]?.sub_one as string)}>
         {subs[0]?.sub_one}
-      </button>{" "}
+      </button>
       <br></br>
       <button onClick={() => scrollYo(subs[1]?.sub_two as string)}>
         {subs[1]?.sub_two}
-      </button>{" "}
+      </button>
       <br></br>
       <button onClick={() => scrollYo(subs[2]?.sub_three as string)}>
         {subs[2]?.sub_three}
-      </button>{" "}
+      </button>
     </div>
   );
 }
