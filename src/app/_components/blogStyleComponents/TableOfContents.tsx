@@ -2,7 +2,14 @@ function scrollYo(hash: string) {
   location.hash = "#" + hash;
 }
 
-export default function TableOfContents({ subs }) {
+interface SubHeadingProps {
+  subs: {
+    id: number;
+    sub: string;
+  }[];
+}
+
+export default function TableOfContents({ subs }: SubHeadingProps) {
   return (
     <div>
       {subs.map((sub) => {
