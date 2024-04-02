@@ -4,9 +4,13 @@ interface TextImageProps {
   halfParagraphText: string;
   srcLink: string;
   flexReverse?: boolean;
+  addPadding?: string;
+  title?: string;
 }
 
 export default function TextImage({
+  title,
+  addPadding,
   halfParagraphText,
   srcLink,
   flexReverse,
@@ -15,9 +19,12 @@ export default function TextImage({
     <div
       className={`flex max-h-96 w-full flex-row justify-center gap-8 ${
         flexReverse ? "flex-row-reverse" : ""
-      }`}
+      } ${addPadding}`}
     >
-      <p className="w-1/2 text-xl">{halfParagraphText}</p>
+      <div className="flex flex-col">
+        <h2 className="pb-2 text-3xl">{title}</h2>
+        <p className="text-xl">{halfParagraphText}</p>
+      </div>
       <Image
         src={srcLink}
         className="w-1/2"
