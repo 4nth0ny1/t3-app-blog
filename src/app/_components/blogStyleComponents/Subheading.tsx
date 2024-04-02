@@ -1,6 +1,6 @@
 interface SubHeadingProps {
-  id: string;
-  subheading: string;
+  id?: string;
+  subheading?: string;
 }
 
 export default function Subheading({ id, subheading }: SubHeadingProps) {
