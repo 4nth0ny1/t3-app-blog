@@ -6,6 +6,7 @@ interface TextImageProps {
   flexReverse?: boolean;
   addPadding?: string;
   title?: string;
+  altTag: string;
 }
 
 export default function TextImage({
@@ -14,6 +15,7 @@ export default function TextImage({
   halfParagraphText,
   srcLink,
   flexReverse,
+  altTag,
 }: TextImageProps) {
   return (
     <div
@@ -30,7 +32,7 @@ export default function TextImage({
         className="w-1/2"
         width={1500}
         height={1500}
-        alt=""
+        alt={altTag}
       />
     </div>
   );
