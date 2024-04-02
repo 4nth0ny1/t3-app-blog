@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface TextImageProps {
   halfParagraphText: string;
   srcLink: string;
@@ -16,7 +18,13 @@ export default function TextImage({
       }`}
     >
       <p className="w-1/2 text-xl">{halfParagraphText}</p>
-      <img src={srcLink} className="w-1/2" />
+      <Image
+        src={srcLink}
+        className="w-1/2"
+        width={1500}
+        height={1500}
+        alt=""
+      />
     </div>
   );
 }
