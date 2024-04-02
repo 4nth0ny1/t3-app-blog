@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div
-      className="hero min-h-screen"
+      className="hero h-[calc(100vh-64px)] "
       style={{
         backgroundImage: "url(/hero-david-goldsbury.jpg)",
       }}
