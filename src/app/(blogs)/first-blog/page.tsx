@@ -17,7 +17,7 @@ const subs = [
 export default function FirstBlog() {
   return (
     <BlogWrapper>
-      <Title title="By order of the Peaky Blinders" />
+      <Title title="By order of the Peaky Blinders" blog={true} />
       <hr></hr>
       <div className="flex flex-col py-8 lg:flex-row">
         <div className="flex w-full flex-col items-center justify-center py-2 lg:w-1/5 lg:items-start lg:justify-start">
