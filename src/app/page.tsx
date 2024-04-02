@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Hero from "./_components/Hero";
 import TextImage from "./_components/blogStyleComponents/TextImage";
 import BlogWrapper from "./_components/blogStyleComponents/BlogWrapper";
