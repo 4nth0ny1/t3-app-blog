@@ -2,7 +2,7 @@ export default function BlogWrapper({
   addPadding,
   children,
 }: {
-  addPadding: string;
+  addPadding?: string;
   children: React.ReactNode;
 }) {
   return (
