@@ -1,4 +1,4 @@
-"use client";
+import type { Metadata } from "next";
 
 import BlogWrapper from "~/app/_components/blogStyleComponents/BlogWrapper";
 import BulletedList from "~/app/_components/blogStyleComponents/BulletedList";
@@ -7,6 +7,12 @@ import Subheading from "~/app/_components/blogStyleComponents/Subheading";
 import TableOfContents from "~/app/_components/blogStyleComponents/TableOfContents";
 import Title from "~/app/_components/blogStyleComponents/Title";
 import H3Heading from "~/app/_components/blogStyleComponents/H3Heading";
+
+export const metadata: Metadata = {
+  title: "Putting Tips for High Handicappers",
+  description:
+    "Here are some of the best putting tips I have for high handicappers.",
+};
 
 const subs = [
   { id: 1, sub: "Part 1 - Fundamentals " },

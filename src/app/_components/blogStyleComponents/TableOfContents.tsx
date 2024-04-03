@@ -1,3 +1,5 @@
+"use client"
+
 function scrollYo(hash: string) {
   location.hash = "#" + hash;
 }
