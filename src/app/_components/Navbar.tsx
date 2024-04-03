@@ -7,7 +7,9 @@ export default function Navbar() {
     <div className="bg-base-100">
       <div className="navbar mx-auto max-w-[1200px]">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">Golf Mastery</a>
+          <Link href="/" className="btn btn-ghost text-xl">
+            Golf Mastery
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">

@@ -24,6 +24,7 @@ export default function SecondBlog() {
           <TableOfContents subs={subs} />
         </div>
         <div className="flex min-h-screen w-full flex-col items-center px-4 lg:w-4/5 lg:items-start lg:px-0 lg:pl-12">
+          {/* ITEM ONE */}
           <Subheading
             id={subs[0]?.sub}
             subheading={subs[0]?.sub}
@@ -40,10 +41,11 @@ export default function SecondBlog() {
           <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
           <LinkButton
             linkUrl="/first-blog"
-            buttonText="Link to full review"
+            buttonText="Link to AFFILIATE LINK"
             buttonStyles="bg-orange-600 hover:bg-orange-400"
           />
 
+          {/* ITEM TWO */}
           <Subheading
             id={subs[1]?.sub}
             subheading={subs[1]?.sub}
@@ -59,7 +61,7 @@ export default function SecondBlog() {
           <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
           <LinkButton
             linkUrl="/first-blog"
-            buttonText="Link to full review"
+            buttonText="Link to AFFILIATE LINK"
             buttonStyles="bg-orange-600 hover:bg-orange-400"
           />
         </div>
