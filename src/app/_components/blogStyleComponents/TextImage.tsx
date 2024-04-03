@@ -19,8 +19,8 @@ export default function TextImage({
 }: TextImageProps) {
   return (
     <div
-      className={`flex max-h-96 w-full flex-row justify-center gap-8 ${
-        flexReverse ? "flex-row-reverse" : ""
+      className={`flex w-full flex-col flex-col-reverse justify-center gap-8 px-4 lg:max-h-96 lg:flex-row lg:px-0 ${
+        flexReverse ? "lg:flex-row-reverse" : ""
       } ${addPadding}`}
     >
       <div className="flex flex-col">
@@ -29,7 +29,7 @@ export default function TextImage({
       </div>
       <Image
         src={srcLink}
-        className="w-1/2"
+        className="lg:w-1/2"
         width={1500}
         height={1500}
         alt={altTag}
