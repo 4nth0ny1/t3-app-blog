@@ -80,6 +80,20 @@ const blogArray = [
     ],
     linkUrl: "/second-blog",
   },
+  {
+    id: 3,
+    imgUrl: "/putting-richard-stott.jpg",
+    imgAlt: "putting-image",
+    title: "Putting Tips for High Handicappers",
+    newBlog: true,
+    description:
+      "Putting is really difficult. Here are some of the best putting tips for high handicappers.",
+    tagArray: [
+      { id: 1, name: "putting" },
+      { id: 2, name: "short game" },
+    ],
+    linkUrl: "/putting-tips-for-high-handicappers",
+  },
 ];
 
 export default function BlogsPage() {
