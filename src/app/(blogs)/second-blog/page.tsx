@@ -8,7 +8,10 @@ import TableOfContents from "~/app/_components/blogStyleComponents/TableOfConten
 import TextImage from "~/app/_components/blogStyleComponents/TextImage";
 import Title from "~/app/_components/blogStyleComponents/Title";
 
-const subs = [{ id: 1, sub: "This is how we do it" }];
+const subs = [
+  { id: 1, sub: "Titleist Scotty Cameron Mallet" },
+  { id: 2, sub: "Ping G20" },
+];
 
 export default function SecondBlog() {
   return (
@@ -25,6 +28,8 @@ export default function SecondBlog() {
             id={subs[0]?.sub}
             subheading={subs[0]?.sub}
             numberOfItem={1}
+            linkTrue={true}
+            linkUrl="/first-blog"
           />
           <TextImage
             halfParagraphText="Bullets"
@@ -33,7 +38,31 @@ export default function SecondBlog() {
           />
           <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
           <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
-          <LinkButton linkUrl="/first-blog" buttonText="Link to full review" />
+          <LinkButton
+            linkUrl="/first-blog"
+            buttonText="Link to full review"
+            buttonStyles="bg-orange-600 hover:bg-orange-400"
+          />
+
+          <Subheading
+            id={subs[1]?.sub}
+            subheading={subs[1]?.sub}
+            numberOfItem={2}
+            linkTrue={true}
+            linkUrl="/first-blog"
+          />
+          <TextImage
+            halfParagraphText="Bullets"
+            srcLink="/putting-richard-stott.jpg"
+            altTag="putting-richard-stott.jpg"
+          />
+          <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
+          <Paragraph paragraph="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
+          <LinkButton
+            linkUrl="/first-blog"
+            buttonText="Link to full review"
+            buttonStyles="bg-orange-600 hover:bg-orange-400"
+          />
         </div>
       </div>
     </BlogWrapper>
