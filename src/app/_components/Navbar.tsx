@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="navbar mx-auto max-w-[1200px]">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost text-xl">
-            Golf Mastery
+            Golf Kept Simple
           </Link>
         </div>
         <div className="flex-none">
