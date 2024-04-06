@@ -24,7 +24,7 @@ export default function Card({
 }: CardProps) {
   return (
     <Link href={linkUrl}>
-      <div className="card w-full bg-base-100 shadow-xl">
+      <div className="card max-w-96 bg-base-100 shadow-xl">
         <figure>
           <Image
             src={imgUrl}
