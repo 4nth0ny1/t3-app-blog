@@ -1,14 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Logo from "./Logo";
 
 export default function Navbar() {
   return (
     <div className="bg-base-100">
       <div className="navbar mx-auto max-w-[1200px]">
         <div className="flex-1">
-          <Link href="/" className="btn btn-ghost text-xl">
-            Golf Kept Simple
+          <Link href="/" className="text-xl">
+            <Logo />
           </Link>
         </div>
         <div className="flex-none">
