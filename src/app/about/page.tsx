@@ -2,6 +2,11 @@ import BlogWrapper from "../_components/blogStyleComponents/BlogWrapper";
 import Paragraph from "../_components/blogStyleComponents/Paragraph";
 import Title from "../_components/blogStyleComponents/Title";
 
+export const metadata = {
+  title: "About Page",
+  description: "Everything about my golf journey.",
+};
+
 export default function AboutPage() {
   return (
     <BlogWrapper addPadding="pt-12 pb-24">

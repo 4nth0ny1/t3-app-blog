@@ -13,7 +13,6 @@ interface CardProps {
 }
 
 export default function Card({
-  id,
   imgUrl,
   imgAlt,
   title,

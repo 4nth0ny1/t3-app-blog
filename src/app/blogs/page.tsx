@@ -96,6 +96,12 @@ const blogArray = [
   },
 ];
 
+export const metadata = {
+  title: "Blogs Page",
+  description:
+    "A list of all the how to articles and buyer's guides on this website.",
+};
+
 export default function BlogsPage() {
   return (
     <BlogWrapper>
