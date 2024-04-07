@@ -102,6 +102,7 @@ export const metadata = {
     "A list of all the how to articles and buyer's guides on this website.",
 };
 
+// test
 export default function BlogsPage() {
   return (
     <BlogWrapper>
