@@ -7,7 +7,7 @@
 //       allow: "/", // allows all pages to be crawled by google
 //       disallow: ["/admin", "/private/"], // disallows certain pages to be crawled by google
 //     },
-//     sitemap: "https://acme.com/sitemap.xml", // TODO: change when domain is ready
+//     sitemap: "https://golfkeptsimple.com/sitemap.xml",
 //   };
 // }
 
