@@ -7,7 +7,9 @@ export default function Footer() {
     <div className="bg-base-100 text-base-content">
       <footer className="footer mx-auto flex max-w-[1200px] flex-row justify-between p-10">
         <aside>
-          <Logo />
+          <Link href="/">
+            <Logo />
+          </Link>
           <p>
             Golf Kept Simple
             <br />
